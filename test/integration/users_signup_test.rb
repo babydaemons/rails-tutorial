@@ -18,5 +18,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     assert_template 'users/show'
     assert flash.key?(:success)
+    assert is_logged_in?
   end
 end
