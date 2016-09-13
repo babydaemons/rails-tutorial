@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
   end
 
   # ユーザーログインを破棄する
-  def forgot
+  def forget
     update_attribute(:remember_digest, nil)
   end
 end
